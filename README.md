@@ -16,3 +16,7 @@
   * Acessar e ler os dados no PowerBI.
   * No PowerBI, gerar os Dashboards.
   
+```mermaid
+flowchart LR
+   IBGE --> Python --> MySQL --> Airflow --> CSVFile --> PowerBI
+```
