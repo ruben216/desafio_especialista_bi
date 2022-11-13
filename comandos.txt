@@ -1,0 +1,28 @@
+
+Lista comandos úteis:
+
+	Comando para executar serviço docker
+		sudo systemctl start docker
+
+	Comando para baixar imagem mysql (últ. versão)
+		docker image pull mysql
+
+	Comando para executar e criar container com imagem mysql
+		docker container run -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -v /home/rubenvalenzuela/workspace/desafio_electrolux/mysql:/var/lib/mysql mysql
+
+	Comando para inspecionar container (p.e.: ver IP)
+		docker container ls
+		docker container inspect aa64414c458b
+
+	Comando para executar bash dentro do container
+		docker exec -it aa64414c458b bash
+
+
+
+
+Objetivos:
+	
+	Script python para receber dados do IBGE. Armazenar em DataFrame?
+	Airflow para executar script, e exportar dados para SQL(?)
+	Airflow para exportar VIEW em CSV para repositório compartilhado
+	PowerBI le arquivo e pronto.
