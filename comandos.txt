@@ -25,4 +25,4 @@ Objetivos:
 	Script python para receber dados do IBGE. Armazenar em DataFrame?
 	Airflow para executar script, e exportar dados para SQL(?)
 	Airflow para exportar VIEW em CSV para repositório compartilhado
-	PowerBI le arquivo e pronto.
+	PowerBI lê arquivo e pronto.
