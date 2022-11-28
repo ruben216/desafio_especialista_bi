@@ -9,13 +9,23 @@
   * Conectar na base do IBGE e extrair dados de CNT.
       https://sidra.ibge.gov.br/home/pms/brasil
       https://servicodados.ibge.gov.br/api/docs/agregados?versao=3
-      
+      Gráfico 1 – Exibir gráfico em linha com a evolução das contas CNTs tri a tri (posicionar a esquerda em cima)
+      Deve conter o índice CNT em formato de gráfico em barra e deve contar linha de evolução Tri vs. Tri no mesmo gráfico
+      Deve contar com filtro de data, início e fim do período escolhido.
+      CNT = Contas Nacionais Trimestrais
+
   * Utilizando Python, limpar os dados e organizar em Dataframes.
   * Persistir os dados em uma base MySQL, utilizando container MySQL (docker).
   * Executar rotina utilizando Airflow.
   * Acessar e ler os dados no PowerBI.
   * No PowerBI, gerar os Dashboards.
   
+## Dúvidas 
+
+* CNT seriam as Contas Nacionais Trimestrais?
+*  
+
+
 ```mermaid
 flowchart LR
    IBGE --> Python --> MySQL --> Airflow --> CSVFile --> PowerBI
