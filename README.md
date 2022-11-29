@@ -6,6 +6,16 @@
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 
 ## Objetivos
+
+```mermaid
+flowchart LR
+  subgraph one [Airflow]
+   direction LR
+    Dados_IBGE --Python--> Flat_Data_CSV --Python--> Container_MySQL --Python--> CSVFile --> PowerBI
+  end
+```
+
+
   * Conectar na base do IBGE e extrair dados de CNT.
       https://sidra.ibge.gov.br/home/pms/brasil
       https://servicodados.ibge.gov.br/api/docs/agregados?versao=3
@@ -22,11 +32,6 @@
   
 ## Dúvidas 
 
-* CNT seriam as Contas Nacionais Trimestrais?
-*  
+* CNT seriam as Contas Nacionais Trimestrais? 
 
 
-```mermaid
-flowchart LR
-   IBGE --> Python --> MySQL --> Airflow --> CSVFile --> PowerBI
-```
